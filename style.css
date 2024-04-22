@@ -18,11 +18,14 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    
 }
 
 header h1 {
     color: white;
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Roboto Serif", serif;
 }
 
 header img {
@@ -61,8 +64,13 @@ form button:active {
 
 .form-contatos {
     margin: 50px 200px 20px;
+}
+
+.form-contatos h3 {
     color: white;
     font-size: 22px;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
 }
 
 .table-head {
@@ -76,15 +84,19 @@ form button:active {
     width: 100%;
     margin-top: 15px;
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: "Roboto Serif", serif;
 }
 
 table {
-    width: 600px;
+    width: 450px;
 }
 
 table td {
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     padding: 10px 12px;
+    max-width: 30px;
+    border-bottom: 1px solid rgb(86, 88, 86);
+    font-family: "Roboto Serif", serif;
 }
