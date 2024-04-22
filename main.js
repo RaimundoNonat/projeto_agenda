@@ -1,4 +1,6 @@
 const form = document.getElementById('form-inputs');
+const nomes = [];
+const telefones = [];
 
 let contatos = '';
 
@@ -14,12 +16,20 @@ function atualizaLista() {
     const inputNome = document.getElementById('nome-contato')   
     const inputTelefone = document.getElementById('telefone-contato') 
 
-    let linha = '<tr>';
-    linha += `<td>${inputNome.value} </td>`;
-    linha += `<td>${inputTelefone.value} </td>`;
-    linha += '</tr>';
+    if(nomes.includes(inputNome.value)) {
+        alert (`O nome: ${inputNome.value} já foi inserido!`)
+    } else {
 
-    contatos += linha;
+        nomes.push(inputNome.value);
+        telefones.push(inputTelefone.value);
+
+        let linha = '<tr>';
+        linha += `<td>${inputNome.value} </td>`;
+        linha += `<td>${inputTelefone.value} </td>`;
+        linha += '</tr>';
+    
+        contatos += linha;
+    }
 
     inputNome.value = '';
     inputTelefone.value = '';
