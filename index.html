@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto 2 - Agenda de Contatos</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img src="./assets/agenda.png" alt="Agenda">
+            <h1>Agenda de contatos</h1>
+        </header>
+
+        <form id="form-inputs">
+            <input id="nome-contato" type="text" placeholder="Nome" required>
+            <input id="telefone-contato" type="tel" placeholder="Telefone com DDD" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <div class="form-contatos">
+            <h3>Contatos</h3>
+        </div>
+
+        <div class="table-head">
+            <thead>
+                <p>Nome</p>
+                <p>Telefone</p>
+            </thead>
+        </div>
+
+        <table id="contato">
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
